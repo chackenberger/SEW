@@ -1,5 +1,10 @@
 package at.hackenberger.sew;
 
+/**
+ * Addition Behavior
+ * @author Christoph Hackenberger
+ * @version 1.0
+ */
 public class Addition implements Operation {
 
 

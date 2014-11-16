@@ -1,5 +1,10 @@
 package at.hackenberger.sew;
 
+/**
+ * The definition for mathematical operation behaviors
+ * @author Christoph Hackenberger
+ * @version 1.0
+ */
 public interface Operation {
 
 	/**

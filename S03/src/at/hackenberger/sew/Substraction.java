@@ -1,5 +1,10 @@
 package at.hackenberger.sew;
 
+/**
+ * Substraction Behavior
+ * @author Christoph Hackenberger
+ * @version 1.0
+ */
 public class Substraction implements Operation {
 
 
