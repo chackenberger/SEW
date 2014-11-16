@@ -14,7 +14,7 @@ public abstract class Calculator {
 	public Calculator(Operation operation) {
 		this.values = new ArrayList<Double>();
 		this.modifier = 0;
-		this.operation = operation;
+		this.setOperation(operation);
 	}
 
 	public void addValue(double value) {
@@ -30,14 +30,20 @@ public abstract class Calculator {
 	}
 
 	public List<Double> processCalculations() {
+		List<Double> nList = new ArrayList<Double>();
 		for(Double d : this.values) {
-			d = operation.operation(d, this.modifier);
+			nList.add(operation.operation(d, this.modifier));
 		}
+		this.values = nList;
 		return this.values;
 	}
 
 	public String toString() {
 		return this.values.toString();
+	}
+	
+	protected void setOperation(Operation operation) {
+		this.operation = operation;
 	}
 
 }
